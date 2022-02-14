@@ -1,0 +1,131 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  border: 4px solid black;
+  padding: 15px;
+}
+
+.header {
+  width: 100%;
+  height: 30%;
+  background-color: rgb(29, 53, 172);
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 700px) {
+  .main-container {
+    width: 100%;
+    height: 65%;
+    display: inline-flex;
+    flex-direction: column-reverse;
+  }
+
+  .green {
+    background-color: green;
+    width: 100%;
+    height: 50%;
+    margin-bottom: 15px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+  }
+
+  .yellow {
+    background-color: yellow;
+    width: 100%;
+    height: 50%;
+  }
+
+  .blue {
+    display: inline-block;
+    background-color: blue;
+    width: 33%;
+    height: 60%;
+  }
+
+  .transparent {
+    width: 67%;
+    height: 60%;
+    text-align: right;
+  }
+
+  .orange {
+    display: none;
+    background-color: orange;
+    height: 100%;
+    width: 50%;
+  }
+
+  .red {
+    display: inline-block;
+    background-color: red;
+    height: 100%;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 701px) {
+  .main-container {
+    height: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .yellow {
+    background-color: yellow;
+    width: 50%;
+    height: 35%;
+    margin-right: 15px;
+  }
+
+  .green {
+    background-color: green;
+    width: 50%;
+    height: 100%;
+    padding: 40px 15px 15px 15px;
+    display: flex;
+    align-items: center;
+  }
+
+  .blue {
+    background-color: blue;
+    width: 50%;
+    height: 100%;
+    margin-right: 15px;
+  }
+
+  .transparent {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .orange {
+    width: 100%;
+    height: 30%;
+    background-color: orange;
+  }
+
+  .red {
+    width: 100%;
+    height: 30%;
+    background-color: red;
+  }
+}
